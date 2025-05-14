@@ -1,4 +1,4 @@
-filter_papers.pyimport configparser
+import configparser
 import dataclasses
 import json
 import re
