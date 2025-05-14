@@ -7,3 +7,20 @@ Christopher D. Manning, 144783904
 Chris Potts, 1741530
 Diyi Yang, 2022168
 Monica Lam, 39682108
+Zhiyuan Li, 46947755
+Nathan Srebro, 1706280
+Daniel Hsu, 143724861
+Anant Sahai, 1724120
+Sanjeev Arora, 145563459
+Jason Lee, 2421201
+Simon Du, 145697585
+Lijie Chen, 2184812
+Noah Golowich, 3348246
+Bingbin Liu, 51033208
+Andrej Risteski, 3181040
+David Woodruff,143982862
+Denny Zhou, 65855107
+Jacob Steinhardt, 5164568
+Danqi Chen, 50536468
+Song Mei,2068869988
+Akshay Krishnamurthy,37019006

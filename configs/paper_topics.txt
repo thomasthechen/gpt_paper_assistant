@@ -1,22 +1,31 @@
- 1. New methodological improvements to RLHF or instruction-following which are specific fine-tuning steps that are taken to make language models better at following user instructions across a range of tasks.
-    - Relevant: papers that discuss specific methods like RLHF, or instruction-tuning datasets, improving these methods, or analyzing them. Usually these papers will explicitly mention RLHF, instruction-following or instruction-tuning.
-    - Not relevant: papers about adaptation to some task. Simply following instructions or inputs are not sufficient.
- 2. Shows new powerful test set contamination or membership inference methods for language models. Test set contamination is the phenomenon where a language model observes a benchmark dataset during pretraining.
-    - Relevant: test statistics that can detect contamination of benchmarks in language models. statistics that can provide guarantees are more interesting. membership inference methods that are general enough to apply to language models are also relevant.
-    - Not relevant: any papers that do not consider language models, or that do not consider test set contamination.
- 3. Shows a significant advance in the performance of diffusion language models.
-    - Relevant: papers that study language models that are also diffusion models. Continuous diffusions are even more relevant, while discrete diffusions are less so.
-    - Not relevant: papers about image diffusions like DALL-E or Stable Diffusion, or papers that do not explicitly mention language models or applications to text.
- 4. Describes new paradigms to evaluating open-ended text generation. Evaluating the outputs of language models is hard, especially in open-ended settings like for chatbots.
-    - Relevant: papers that fundamentally rethink language model evaluation -- especially by accounting for subjectivity or using adversaries.
-    - Not relevant: specific evaluations for specific tasks, identifying new properties or flaws of language models, or simply collecting new data.
- 5. Conducts surveys or provides data into real-world usage and safety properties of language models.
-    - Relevant: papers that create new datasets or surveys on real-world usage of language models.
-    - Not relevant: papers that apply language models to new real-world tasks.
- 6. Studies 'scaling laws' in the context of neural networks. Scaling laws refer to the very clear power-law relationship between the size or computational power used to train a model and the performance of that model.
-    - Relevant: theoretical or conceptual explanation behind scaling laws for language models.
+ 
+ 1. Theoretical works which explain Length Generalization from a mathematical perspective. Length Generalization refers to the ability of a trained model (e.g. transformer or LLM) to generalize to inputs of a larger size than inputs which it was trained on. E.g. training a model on 10 by 10 digit addition, and generalizing to 20 by 20 digit.
+    - Relevant: papers with new theoretical insights, or whose ideas inspire new algorithms/empirical methods. 
+    - Not relevant: papers which are purely empirical.
+ 2. Theoretical works which explain Inference-Time Scaling, or use of RL at inference time, especially in relation to building reasoning models (models which do math/coding well)
+    - Relevant: new theoretical insights on why inference time scaling and RL encourage LLMs to be so good at math.
+    - Not relevant: pure empirical papers which try to improve reasoning via post-training.
+ 3. Theoretical works which study 'scaling laws' in the context of neural networks. Scaling laws refer to the very clear power-law relationship between the size or computational power used to train a model and the performance of that model.
+    - Relevant: theoretical or conceptual explanation behind scaling laws for language models. Paper does not need to have rigorous proofs--i.e. it can be from physicists.
     - Not relevant: papers that have experiments at different model scales (but do not explicitly fit a scaling law) or papers that mention scaling laws, but the scaling laws are not the central subject of the paper
+ 4. Theoretical works which study self-training, or weak-to-strong generalization
+    - Relevant: papers which offer insights on when self-improvement is possible, or propose new algorithms to do so.
+    - Not relevant: purely empirical papers.
+ 5. Other theoretical papers which offer a unique insightful perspective on LLMs: 
+    - Relevant: paper somehow uses new mathematical tools to think about LLMs: quantum stuff, representation theory stuff, geometry stuff, etc.
+    - Not relevant: paper too trivial, unrealistic (subjective)
+ 6. Empirical papers which study LLM agents
+    - Relevant: empirical papers on how to train an agent to perform tasks, to be self-autonomous, to be generally useful
+    - Not relevant: papers about evaluating agents, safety for agents, etc.
+ 7. Empirical papers which study AI safety from a fairly theoretical setting
+    - Relevant: papers which discuss how to design models to be robust to evil queries, especially when the model has chain-of-thought. If there are any papers which use game theory, cryptography (e.g. watermarking) somehow, this would be particularly interesting. Moreover, if the paper has to do with domains such as preventing audio deep fakes, video/image deepfakes, etc. that would be interesting
+    - Not relevant: papers about interpretabiity, ethics, or which are not technical.
+ 8. Empirical papers which make significant progress towards AGI 
+    - Relevant: improves reasoning significantly (e.g. Deepseek R1), or improves Agentic behavior signfiicantly, or something else.
+    - Not relevant: low quality incremental empirical papers
+ 9. Empirical papers which are application focussed to using LLMs to decode animal communication.
+    - Relevant: papers by CETI on decoding dolphin/whale communiation 
+    - Not relevant: most papers which apply machine learning to a specific domain
 
  In suggesting papers to your friend, remember that he enjoys papers on statistical machine learning, and generative modeling in natural language processing.
- Your friend also likes learning about surprising empirical results in language models, as well as clever statistical tricks.
- He does not want to read papers that are about primarily applications of methods to specific domains.
+ Your friend also likes learning about surprising empirical results in language models, or new theoretical ways to think about LLMs. 
